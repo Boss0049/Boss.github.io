@@ -6,6 +6,36 @@
     <title>Document</title>
 </head>
 <body>
-    Hello World
+    <div class="container">
+        <input type="number"  id="first"/>
+        <input type="number"  id="second"/>
+        <button onclick="plus()">+</button>
+        <button onclick="minus()">-</button>
+        <button onclick="multiplied()">×</button>
+        <button onclick="divided()">÷</button>
+        <h1></h1>
+    </div>
 </body>
+<script>
+    function plus(){
+        var sum = parseInt(document.getElementById("first").value) +  parseInt(document.getElementById("second").value)
+        console.log(sum)
+        document.querySelector("h1").innerHTML = sum
+    }
+    function minus(){
+        var sum = parseInt(document.getElementById("first").value) -  parseInt(document.getElementById("second").value)
+        console.log(sum)
+        document.querySelector("h1").innerHTML = sum
+    }
+    function multiplied(){
+        var sum = parseInt(document.getElementById("first").value) *  parseInt(document.getElementById("second").value)
+        console.log(sum)
+        document.querySelector("h1").innerHTML = sum
+    }
+    function divided(){
+        var sum = parseInt(document.getElementById("first").value) /  parseInt(document.getElementById("second").value)
+        console.log(sum)
+        document.querySelector("h1").innerHTML = sum
+    }
+</script>
 </html>
