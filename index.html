@@ -6,6 +6,60 @@
     <title>Document</title>
 </head>
 <body>
+    <table style="width:100%;">
+        <tr>
+            <td>text-align</td>
+            <td style="text-align:center">text-align</td>
+            <td style="text-align:left">text-align</td>
+            <td style="text-align:right">text-align</td>
+            <td style="text-align:justify">text-align</td>
+        </tr>
+        <tr>
+            <td>text-shadow</td>
+            <td style="text-shadow: 2px 2px #ff0000;">text-shadow</td>
+        </tr>
+        <tr>
+            <td>vertical-align</td>
+            <td style="vertical-align: baseline;">vertical-align</td>
+            <td style="vertical-align: top;">vertical-align</td>
+            <td style="vertical-align: middle;">vertical-align</td>
+            <td style="vertical-align: bottom;">vertical-align</td>
+            <td style="vertical-align: sub;">vertical-align</td>
+            <td style="vertical-align: text-top;">vertical-align</td>
+        </tr>
+        <tr>
+            <td>word-spacing</td>
+            <td style="word-spacing:10px">word-spacing</td>
+        </tr>
+        <tr>
+            <td>direction</td>
+            <td style="direction:ltr">direction</td>
+            <td style="direction:rtl">direction</td>
+            <td style="direction:initial">direction</td>
+            <td style="direction:unset">direction</td>
+        </tr>
+        <tr>
+            <td>text-decoration</td>
+            <td style="text-decoration: overline;">text-decoration</td>
+            <td style="text-decoration: line-through;">text-decoration</td>
+            <td style="text-decoration: underline;">text-decoration</td>
+            <td style="text-decoration: underline overline;">text-decoration</td>
+        </tr>
+        <tr>
+            <td>text-decoration-color</td>
+            <td style="text-decoration: underline;
+            text-decoration-color:violet ;">text-decoration-color</td>
+        </tr>
+        <tr>
+            <td>text-decoration-style</td>
+            <td style="text-decoration-line: underline;
+            text-decoration-style: solid;">text-decoration-style</td>
+        </tr>
+        <tr>
+            <td>text-indent</td>
+            <td style="text-indent:10px">text-indent</td>
+        </tr>
+    </table>
     <div class="container">
         <input type="number"  id="first"/>
         <input type="number"  id="second"/>
@@ -38,4 +92,9 @@
         document.querySelector("h1").innerHTML = sum
     }
 </script>
+<style>
+    table, th, td {
+  border: 1px solid black;
+}
+</style>
 </html>
