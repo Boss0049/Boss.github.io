@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS REVIEW</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1 style="text-align: center;">CSS REVIEW</h1>
+    <div class="container">
+      <div id="Hello">
+        <div id="head">
+          <h1>CSS syntax ประกอบด้วยอะไรบ้าง</h1>
+        </div>
+        <div id="detail">
+          <p>CSS syntax ประกอบด้วย 3 อย่าง</p>
+          <ol>
+            <li>
+              Selecter
+            </li>
+            <li>
+              Prpperty
+            </li>
+            <li>
+              Value
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <div id="Hello1">
+        <div id="head1">
+          <h1>การเขียน CSS มีกี่แบบอะไรบ้าง</h1>
+        </div>
+        <div id="detail1">
+          <p>การเขียน CSS มี 3 แบบ</p>
+          <ol>
+            <li>
+              Inline
+            </li>
+            <li>
+              External
+            </li>
+            <li>
+              Internal
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <div id="Hello3">
+        <div id="head3">
+          <h1>selector มีกี่แบบอะไรบ้าง</h1>
+        </div>
+        <div id="detail3">
+          <p>selector มี 6 แบบ</p>
+          <ol>
+            <li>
+              ID
+            </li>
+            <li>
+              Class
+            </li>
+            <li>
+              Pseudo element
+            </li>
+            <li>
+              Pseudo class
+            </li>
+            <li>
+              Combinators
+            </li>
+            <li>
+              Attribute selector
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div id="Hello2">
+        <div id="head2">
+          <h1>combinator มีกี่แบบอะไรบ้าง</h1>
+        </div>
+        <div id="detail2">
+          <p>combinator มี</p>
+          <ol>
+            <li>
+              space
+            </li>
+            <li>
+              +
+            </li>
+            <li>
+              ~
+            </li>
+            <li>
+              >
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </body>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Kanit", sans-serif;
+      font-weight: bold;
+    }
+    .container {
+      width: 100%;
+      display: grid;
+      background-color: #142850;
+      grid-template-columns: 20% 20% 20% 20%;
+      grid-template-rows: 100%;
+      justify-content: space-around;
+    }
+    .container div {
+      background-color: #f0a500;
+    }
+    div {
+      text-align: center;
+    }
+    #detail {
+      display: none;
+    }
+    #detail1 {
+      display: none;
+    }
+    #detail2 {
+      display: none;
+    }
+    #detail3 {
+      display: none;
+    }
+  </style>
+  <script>
+    document.getElementById("Hello").addEventListener("mouseover", mouseOver);
+    document.getElementById("Hello").addEventListener("mouseout", mouseOut);
+    function mouseOver() {
+      document.getElementById("head").style.display = "none";
+      document.getElementById("detail").style.display = "block";
+    }
+    function mouseOut() {
+      document.getElementById("head").style.display = "block";
+      document.getElementById("detail").style.display = "none";
+    }
+
+    document.getElementById("Hello1").addEventListener("mouseover", mouseOver1);
+    document.getElementById("Hello1").addEventListener("mouseout", mouseOut1);
+    function mouseOver1() {
+      document.getElementById("head1").style.display = "none";
+      document.getElementById("detail1").style.display = "block";
+    }
+    function mouseOut1() {
+      document.getElementById("head1").style.display = "block";
+      document.getElementById("detail1").style.display = "none";
+    }
+
+    document.getElementById("Hello2").addEventListener("mouseover", mouseOver2);
+    document.getElementById("Hello2").addEventListener("mouseout", mouseOut2);
+    function mouseOver2() {
+      document.getElementById("head2").style.display = "none";
+      document.getElementById("detail2").style.display = "block";
+    }
+    function mouseOut2() {
+      document.getElementById("head2").style.display = "block";
+      document.getElementById("detail2").style.display = "none";
+    }
+
+    document.getElementById("Hello3").addEventListener("mouseover", mouseOver3);
+    document.getElementById("Hello3").addEventListener("mouseout", mouseOut3);
+    function mouseOver3() {
+      document.getElementById("head3").style.display = "none";
+      document.getElementById("detail3").style.display = "block";
+    }
+    function mouseOut3() {
+      document.getElementById("head3").style.display = "block";
+      document.getElementById("detail3").style.display = "none";
+    }
+  </script>
+</html>
