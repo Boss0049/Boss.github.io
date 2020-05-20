@@ -103,6 +103,69 @@
         </div>
       </div>
     </div>
+    <br />
+    <div class="container">
+      <div id="Hello4">
+        <div id="head4">
+          <h1>property และ value คืออะไรแตกต่างกันอย่างไร</h1>
+        </div>
+        <div id="detail4">
+          <p>property และ value คือ</p>
+          <ol>
+            <li>
+              property คือ ตัวคำสั่ง เช่น width,height
+            </li>
+            <li>
+              value คือ ค่าคำหนดของ propety เช่น width:100% 100% คือ value
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <div id="Hello5">
+        <div id="head5">
+          <h1>property ที่สอนใน precamp มีกี่กลุ่มอะไรบ้าง</h1>
+        </div>
+        <div id="detail5">
+          <p>property มี 5 กลุ่ม</p>
+          <ol>
+            <li>
+              property for content : color , size ,font ,text
+            </li>
+            <li>
+              property for border : border ,table
+            </li>
+            <li>
+              property for padding : padding
+            </li>
+            <li>
+              property for margin : margin
+            </li>
+            <li>
+              property for element : display ,Heigth ,Width ,Position ,Float
+              ,Align
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <div id="Hello6">
+        <div id="head6">
+          <h1>value unit มีกี่ประเภทอะไรบ้างแต่ละ ประเภทคืออะไร</h1>
+        </div>
+        <div id="detail6">
+          <p>value unit มี 2 ประเภท</p>
+          <ol>
+            <li>
+              Absolute lenghts : ค่าที่ฟิค เช่น px , cm , in , pt , pc
+            </li>
+            <li>
+              Reletive lenghts : ค่าไม่ฟิค เช่น em , ex , vh , vw , %
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
   </body>
   <style>
     body {
@@ -134,6 +197,15 @@
       display: none;
     }
     #detail3 {
+      display: none;
+    }
+    #detail4 {
+      display: none;
+    }
+    #detail5 {
+      display: none;
+    }
+    #detail6 {
       display: none;
     }
   </style>
@@ -180,6 +252,39 @@
     function mouseOut3() {
       document.getElementById("head3").style.display = "block";
       document.getElementById("detail3").style.display = "none";
+    }
+
+    document.getElementById("Hello4").addEventListener("mouseover", mouseOver4);
+    document.getElementById("Hello4").addEventListener("mouseout", mouseOut4);
+    function mouseOver4() {
+      document.getElementById("head4").style.display = "none";
+      document.getElementById("detail4").style.display = "block";
+    }
+    function mouseOut4() {
+      document.getElementById("head4").style.display = "block";
+      document.getElementById("detail4").style.display = "none";
+    }
+
+    document.getElementById("Hello5").addEventListener("mouseover", mouseOver5);
+    document.getElementById("Hello5").addEventListener("mouseout", mouseOut5);
+    function mouseOver5() {
+      document.getElementById("head5").style.display = "none";
+      document.getElementById("detail5").style.display = "block";
+    }
+    function mouseOut5() {
+      document.getElementById("head5").style.display = "block";
+      document.getElementById("detail5").style.display = "none";
+    }
+
+    document.getElementById("Hello6").addEventListener("mouseover", mouseOver6);
+    document.getElementById("Hello6").addEventListener("mouseout", mouseOut6);
+    function mouseOver6() {
+      document.getElementById("head6").style.display = "none";
+      document.getElementById("detail6").style.display = "block";
+    }
+    function mouseOut6() {
+      document.getElementById("head6").style.display = "block";
+      document.getElementById("detail6").style.display = "none";
     }
   </script>
 </html>
