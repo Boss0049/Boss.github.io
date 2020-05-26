@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header
+      class="card-header"
+      style="background-color: rgba(0, 0, 0, 0); border-bottom: none;"
+    >
+      <h1 class="hello"><a href="/">TasteSpotting</a></h1>
+
+      <div class="nav-bar">
+        <h2>Browse by:</h2>
+
+        <ul class="channel-nav">
+          <li><a class="inactive" href="/">Date</a></li>
+          <li>| <a class="active" href="/category">Category</a></li>
+          <li>
+            |
+            <a class="active" href="/popular/favorites/all-time/1"
+              >Popularity</a
+            >
+          </li>
+          <li>| <a class="active" href="/randomPage">Random</a></li>
+        </ul>
+        <span class="search_button">
+          <a href="javascript: document.search.submit();"></a>
+        </span>
+        <div class="search-nav">
+          <form id="search" name="search" method="post" action="/search/0/1">
+            <input
+              type="text"
+              name="search_term"
+              value="search"
+              id="search_term"
+              class="search_input"
+              onfocus="cl(this)"
+            />
+            <input type="hidden" name="just_searched" value="true" />
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="container-fluid">
+      <div
+        class="row justify-content-start"
+        style="text-align: -webkit-center;"
+      >
+        <div class="col-3 my-3">
+          <div class="card" style="width: 18rem;">
+            <img
+              class="card-img-top"
+              src="http://images.tastespotting.com/thumbnails/1081287.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 my-3">
+          <div class="card" style="width: 18rem;">
+            <img
+              class="card-img-top"
+              src="http://images.tastespotting.com/thumbnails/1081281.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 my-3">
+          <div class="card" style="width: 18rem;">
+            <img
+              class="card-img-top"
+              src="http://images.tastespotting.com/thumbnails/1081280.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="w-100"></div>
+        <div class="col-3 my-3">
+          <div class="card" style="width: 18rem;">
+            <img
+              class="card-img-top"
+              src="http://images.tastespotting.com/thumbnails/1081279.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 my-3">
+          <div class="card" style="width: 18rem;">
+            <img
+              class="card-img-top"
+              src="http://images.tastespotting.com/thumbnails/1080261.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 my-3">
+          <div class="card" style="width: 18rem;">
+            <img
+              class="card-img-top"
+              src="http://images.tastespotting.com/thumbnails/1080260.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 my-3">
+          <div class="card" style="width: 18rem;">
+            <img
+              class="card-img-top"
+              src="http://images.tastespotting.com/thumbnails/1080258.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 my-3">
+          <div class="card" style="width: 18rem;">
+            <img
+              class="card-img-top"
+              src="http://images.tastespotting.com/thumbnails/1080256.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 my-3">
+          <div class="card" style="width: 18rem;">
+            <img
+              class="card-img-top"
+              src="http://images.tastespotting.com/thumbnails/1080255.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 my-3">
+          <div class="card" style="width: 18rem;">
+            <img
+              class="card-img-top"
+              src="http://images.tastespotting.com/thumbnails/1080254.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 my-3">
+          <div class="card" style="width: 18rem;">
+            <img
+              class="card-img-top"
+              src="http://images.tastespotting.com/thumbnails/1080253.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 my-3">
+          <div class="card" style="width: 18rem;">
+            <img
+              class="card-img-top"
+              src="http://images.tastespotting.com/thumbnails/1080252.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 my-3">
+          <div class="card" style="width: 18rem;">
+            <img
+              class="card-img-top"
+              src="http://images.tastespotting.com/thumbnails/1080251.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 my-3">
+          <div class="card" style="width: 18rem;">
+            <img
+              class="card-img-top"
+              src="http://images.tastespotting.com/thumbnails/1080250.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 my-3">
+          <div class="card" style="width: 18rem;">
+            <img
+              class="card-img-top"
+              src="http://images.tastespotting.com/thumbnails/1080247.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 my-3">
+          <div class="card" style="width: 18rem;">
+            <img
+              class="card-img-top"
+              src="http://images.tastespotting.com/thumbnails/1080246.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 my-3">
+          <div class="card" style="width: 18rem;">
+            <img
+              class="card-img-top"
+              src="http://images.tastespotting.com/thumbnails/1080243.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 my-3">
+          <div class="card" style="width: 18rem;">
+            <img
+              class="card-img-top"
+              src="http://images.tastespotting.com/thumbnails/1080241.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 my-3">
+          <div class="card" style="width: 18rem;">
+            <img
+              class="card-img-top"
+              src="http://images.tastespotting.com/thumbnails/1080001.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 my-3">
+          <div class="card" style="width: 18rem;">
+            <img
+              class="card-img-top"
+              src="http://images.tastespotting.com/thumbnails/1079995.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 my-3">
+          <div class="card" style="width: 18rem;">
+            <img
+              class="card-img-top"
+              src="http://images.tastespotting.com/thumbnails/1079992.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 my-3"></div>
+        <div class="col-3 my-3">
+          <div class="card" style="width: 18rem;">
+            <img
+              class="card-img-top"
+              src="http://images.tastespotting.com/thumbnails/1079977.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 my-3">
+          <div class="card" style="width: 18rem;">
+            <img
+              class="card-img-top"
+              src="http://images.tastespotting.com/thumbnails/1079970.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 my-3">
+          <div class="card" style="width: 18rem;">
+            <img
+              class="card-img-top"
+              src="http://images.tastespotting.com/thumbnails/1079964.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 my-3">
+          <div class="card" style="width: 18rem;">
+            <img
+              class="card-img-top"
+              src="http://images.tastespotting.com/thumbnails/1079979.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 my-3">
+          <div class="card" style="width: 18rem;">
+            <img
+              class="card-img-top"
+              src="http://images.tastespotting.com/thumbnails/1079976.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 my-3">
+          <div class="card" style="width: 18rem;">
+            <img
+              class="card-img-top"
+              src="http://images.tastespotting.com/thumbnails/1079974.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 my-3">
+          <div class="card" style="width: 18rem;">
+            <img
+              class="card-img-top"
+              src="http://images.tastespotting.com/thumbnails/1079971.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 my-3">
+          <div class="card" style="width: 18rem;">
+            <img
+              class="card-img-top"
+              src="http://images.tastespotting.com/thumbnails/1079968.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 my-3">
+          <div class="card" style="width: 18rem;">
+            <img
+              class="card-img-top"
+              src="http://images.tastespotting.com/thumbnails/1079967.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 my-3">
+          <div class="card" style="width: 18rem;">
+            <img
+              class="card-img-top"
+              src="http://images.tastespotting.com/thumbnails/1079966.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 my-3">
+          <div class="card" style="width: 18rem;">
+            <img
+              class="card-img-top"
+              src="http://images.tastespotting.com/thumbnails/1079965.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 my-3">
+          <div class="card" style="width: 18rem;">
+            <img
+              class="card-img-top"
+              src="http://images.tastespotting.com/thumbnails/1079963.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 my-3">
+          <div class="card" style="width: 18rem;">
+            <img
+              class="card-img-top"
+              src="http://images.tastespotting.com/thumbnails/1079961.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  <style>
+    .hello {
+      padding: 18px 0 8px 30px;
+      background-color: transparent;
+      background-image: url(http://tastespotting.com/images/banner_white.gif);
+      background-repeat: no-repeat;
+      background-position: 30px 18px;
+    }
+    .hello a {
+      display: block;
+      width: 381px;
+      height: 32px;
+      text-indent: -9999px;
+      overflow: hidden;
+    }
+    .nav-bar {
+      position: relative;
+      clear: both;
+      top: 0px;
+      display: block;
+      font-family: Verdana, Arial, sans-serif;
+      color: #222;
+      padding: 2px 0 0;
+      height: 30px;
+      font-size: 10pt;
+      font-weight: 500;
+      overflow: visible;
+      margin: 0 35px;
+      background: transparent
+        url(http://tastespotting.com/images/dashed-line.gif) bottom left
+        repeat-x;
+      z-index: 3;
+    }
+    .channel-nav {
+      float: left;
+      position: relative;
+      letter-spacing: 1px;
+    }
+    .channel-nav li {
+      display: inline;
+      list-style: none;
+    }
+    .nav-bar h2 {
+      position: static;
+      font-weight: normal;
+      text-transform: lowercase;
+      float: left;
+      margin-right: 5px;
+      font-family: Verdana, Arial, sans-serif;
+      font-size: 0.8em;
+      line-height: 120%;
+    }
+    img {
+      padding: 10px;
+    }
+    .card {
+      background-image: url(http://tastespotting.com/images/glow_gray.gif);
+      background-size: cover;
+      text-align: center;
+    }
+    a {
+      color: black;
+    }
+    input {
+      float: right;
+    }
+  </style>
+</html>

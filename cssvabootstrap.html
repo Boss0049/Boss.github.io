@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <title>CSS VS BOOTSTRAP</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 style="text-align: center; color: white;">CSS VS BOOTSTRAP</h1>
+      <div class="flex">
+        <div class="card mx-2 my-2" style="width: 18rem;">
+          <div class="card-body">
+            <a href="#" class="card-link activecss">CSS</a>
+            <a href="#" class="card-link activeboot"> BOOTSTRAP</a>
+            <h5 class="card-title css">CSS</h5>
+            <h5 class="card-title boot">BOOTSTRAP</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Grid</h6>
+            <p class="card-text css">
+              Grid ใน CSS จะต้องกำหนดขึ้นมาเองโดยใช้ display:grid แล้วกำหนด
+              column และ row ของ grid โดยใช้ grid-template-columns หรือ
+              grid-template-row
+            </p>
+            <p class="card-text boot">
+              BOOTSTRAP จะมี class ให้อยู่แล้วโดยใช้ class row เป้น parent
+              element แล้ว chian เป็น col หรือ col-1 ถึง col-12
+            </p>
+          </div>
+        </div>
+
+        <div class="card mx-2 my-2" style="width: 18rem;">
+          <div class="card-body">
+            <a href="#" class="card-link activecss">CSS</a>
+            <a href="#" class="card-link activeboot"> BOOTSTRAP</a>
+            <h5 class="card-title css">CSS</h5>
+            <h5 class="card-title boot">BOOTSTRAP</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Flex</h6>
+            <p class="card-text css">
+              Flex ใน CSS จะต้องใช้ display:flex ก่อน หลังจากนั้นใช้
+              flex-direction: row หรือ column
+              ใช้การกำหนดว่าจะให้เป็นแนวนอนหรือเเนวตั้ง
+            </p>
+            <p class="card-text boot">
+              Flex ใน BOOTSTRAP จะมี class ให้อยู่แล้วโดยใช้ class d-flex
+              จะเป็นการกำหนด display:flex และเราจะกำหนด row หรือ column โดยใช้
+              flex-row หรือ flex-column
+            </p>
+          </div>
+        </div>
+
+        <div class="card mx-2 my-2" style="width: 18rem;">
+          <div class="card-body">
+            <a href="#" class="card-link activecss">CSS</a>
+            <a href="#" class="card-link activeboot"> BOOTSTRAP</a>
+            <h5 class="card-title css">CSS</h5>
+            <h5 class="card-title boot">BOOTSTRAP</h5>
+            <h6 class="card-subtitle mb-2 text-muted">justify</h6>
+            <p class="card-text css">
+              CSS จะใช้โดยการเขียน justify-content:start | end | center | space
+              ต่างๆ
+            </p>
+            <p class="card-text boot">
+              BOOTSTRAP จะมี class มาให้โดยเขียนเป็น justift-content-start | end
+              | center ส่วนตัวอื่นเขียนแค่คำหลังไม่ต้องใส่ space
+            </p>
+          </div>
+        </div>
+
+        <div class="card mx-2 my-2" style="width: 18rem;">
+          <div class="card-body">
+            <a href="#" class="card-link activecss">CSS</a>
+            <a href="#" class="card-link activeboot"> BOOTSTRAP</a>
+            <h5 class="card-title css">CSS</h5>
+            <h5 class="card-title boot">BOOTSTRAP</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Color</h6>
+            <p class="card-text css">
+              CSS เราจะต้องกำหนดค่าสีเองโดยการเขียน # แล้วตามด้วยรหัสโค้ด
+            </p>
+            <p class="card-text boot">
+              BOOTSTRAP จะมี class ที่เป็น default มาให้ สามารถดูได้ใน web
+              BOOTSTRAP
+            </p>
+          </div>
+        </div>
+
+        <div class="card mx-2 my-2" style="width: 18rem;">
+          <div class="card-body">
+            <a href="#" class="card-link activecss">CSS</a>
+            <a href="#" class="card-link activeboot"> BOOTSTRAP</a>
+            <h5 class="card-title css">CSS</h5>
+            <h5 class="card-title boot">BOOTSTRAP</h5>
+            <h6 class="card-subtitle mb-2 text-muted">margin & padding</h6>
+            <p class="card-text css">
+              CSS ถ้าเราจะกำหนด margin หรือ padding จะต้องกำหนดโดย margin:10px
+              หรือ padding:10px จะโดย บน ขวา ล่าง ซ้าย หรือ
+              ถ้าเราจะกำหนดซ้ายอย่างเดียวโดย margin-top | right | bottom |
+              left:10px padding เช่นกัน
+            </p>
+            <p class="card-text boot">
+              BOOTSTRAP จะมี class มาให้ โดย m คือ margin และ p คือ padding โดย
+              BOOTSTRAP จะกำหนดมาให้ 5 เลข โดยจะใช้ m-1 ถึง 5 จะโดยทุกด้าน
+              ถ้าอยากเฉพาะด้าน mt | r | b | l - 1 ถึง 5 padding เช่นกัน
+            </p>
+          </div>
+        </div>
+
+        <div class="card mx-2 my-2" style="width: 18rem;">
+          <div class="card-body">
+            <a href="#" class="card-link activecss">CSS</a>
+            <a href="#" class="card-link activeboot">BOOTSTRAP</a>
+            <h5 class="card-title css">CSS</h5>
+            <h5 class="card-title boot">BOOTSTRAP</h5>
+            <h6 class="card-subtitle mb-2 text-muted">ความคิดเห็น</h6>
+            <p class="card-text css">
+              CSS จะทำงานได้อิสระกว่า แต่ใช้เวลานานกว่านิดน่อย
+              เพราะเราต้องกำหนดเองทั้งหมด
+            </p>
+            <p class="card-text boot">
+              bootstrap มี class มาให้ใช้เลย แต่ถ้าจะ config จะมีความลำบากกว่า
+              เพราะ bootstrap เขียนมาซับซ้อน แต่ข้อดีคือมี responesive ในตัว
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <style>
+    body {
+      background-color: black;
+    }
+    .container {
+      padding: 30px;
+    }
+    .flex {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .boot {
+      display: none;
+    }
+
+    .activecss:focus ~ .boot {
+      display: none;
+    }
+
+    .activeboot:focus ~ .boot {
+      display: block;
+    }
+
+    .activeboot:focus ~ .css {
+      display: none;
+    }
+    .card-body {
+      text-align: center;
+    }
+  </style>
+</html>
