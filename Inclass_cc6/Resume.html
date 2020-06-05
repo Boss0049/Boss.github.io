@@ -13,9 +13,16 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+    <script src="/Inclass_cc6/resume.js"></script>
   </head>
   <body>
     <section class="sec-head">
+      <i onclick="changemode()" class="far fa-lightbulb ligth"></i>
+      <i
+        onclick="changemodedark()"
+        class="far fa-lightbulb dark"
+        style="display: none;"
+      ></i>
       <div class="head-item-1">
         <img class="img-item" src="ouc.jpg" />
         <div class="content-item">
@@ -132,15 +139,21 @@
     <section class="sec-body-3">
       <div class="skills">
         <h1>SKILLS.</h1>
+
+        <input class="inputskill" type="text" />
+        <button onclick="addskill()" class="subskill" type="submit">
+          ตกลง
+        </button>
+
         <div class="skill-item">
-          <ul>
+          <ul id="count_name">
             <li class="name-skill">HTML</li>
             <li class="name-skill">CSS</li>
             <li class="name-skill">JS</li>
             <li class="name-skill">PHP</li>
             <li class="name-skill">ALL ADOBE</li>
           </ul>
-          <ul>
+          <ul id="count_value">
             <li class="skill-value"><div class="skill-value-1"></div></li>
             <li class="skill-value"><div class="skill-value-1"></div></li>
             <li class="skill-value"><div class="skill-value-1"></div></li>
@@ -180,6 +193,7 @@
       flex-direction: column;
       font-family: "Open Sans", sans-serif;
       font-size: 1rem;
+      transition: 2s;
     }
     ul {
       list-style: none;
@@ -204,6 +218,7 @@
       grid-template-columns: 70% 30%;
       padding: 20px;
       letter-spacing: 1.5px;
+      transition: 2s;
     }
     .head-item-1 {
       display: flex;
@@ -335,8 +350,11 @@
       .li-margin {
         margin: 5px;
       }
+      .interest-item {
+        height: 100px;
+      }
     }
-    @media only screen and (max-width: 1024px) {
+    @media only screen and (max-width: 1200px) {
       .sec-head {
         grid-template-columns: 100%;
       }
@@ -362,6 +380,9 @@
       .music,
       .dumbbell {
         align-self: flex-start;
+      }
+      .interest-item {
+        height: 100px;
       }
     }
   </style>
