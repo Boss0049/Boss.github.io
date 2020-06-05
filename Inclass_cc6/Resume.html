@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Resume</title>
+    <link rel="icon" href="http://127.0.0.1:5500/Inclass_cc6/ouc.jpg" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
@@ -178,6 +179,7 @@
       display: flex;
       flex-direction: column;
       font-family: "Open Sans", sans-serif;
+      font-size: 1rem;
     }
     ul {
       list-style: none;
@@ -186,22 +188,6 @@
     .li-margin {
       margin: 20px;
     }
-    /* .experience-item-1::before {
-      content: "";
-      position: absolute;
-      width: 6px;
-      height: 224px;
-      background-color: salmon;
-      left: 60px;
-    }
-    .education-item-1::before {
-      content: "";
-      position: absolute;
-      width: 6px;
-      height: 224px;
-      background-color: salmon;
-      left: 800px;
-    } */
     img {
       margin: 10px;
       margin-left: 0px;
@@ -337,14 +323,20 @@
       .sec-body-1 {
         grid-template-columns: 100%;
       }
+      .sec-body-2 {
+        grid-template-columns: 100%;
+      }
       .sec-body-3 {
         grid-template-columns: 100%;
       }
       .body-1-item {
         align-items: center;
       }
+      .li-margin {
+        margin: 5px;
+      }
     }
-    @media only screen and (max-width: 800px) {
+    @media only screen and (max-width: 1024px) {
       .sec-head {
         grid-template-columns: 100%;
       }
@@ -366,6 +358,10 @@
       .body-2-item {
         justify-content: center;
         border-left: none;
+      }
+      .music,
+      .dumbbell {
+        align-self: flex-start;
       }
     }
   </style>
