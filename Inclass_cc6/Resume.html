@@ -16,13 +16,15 @@
     <script src="resume.js"></script>
   </head>
   <body>
-    <section class="sec-head">
-      <i onclick="changemode()" class="far fa-lightbulb ligth"></i>
+   <section class="sec-light">
+    <i onclick="changemode()" class="far fa-lightbulb ligth"></i>
       <i
         onclick="changemodedark()"
         class="far fa-lightbulb dark"
         style="display: none;"
       ></i>
+    </sectio>
+    <section class="sec-head">
       <div class="head-item-1">
         <img class="img-item" src="ouc.jpg" />
         <div class="content-item">
@@ -234,6 +236,11 @@
       justify-content: flex-start;
       padding: 20px;
       align-items: center;
+    }
+    .sec-light{
+      display:inline-block;
+      text-aling:center;
+      width:50%
     }
     .content-item {
       margin-left: 30px;
